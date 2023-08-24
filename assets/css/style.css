@@ -531,6 +531,7 @@ main {
   z-index: 1;
 }
 
+
 .service-item::before {
   content: "";
   position: absolute;
@@ -544,6 +545,10 @@ main {
 
 .service-icon-box img { margin: auto; }
 
+.service-item:hover {
+   transform: scale(1.05); 
+  }
+
 .service-content-box { text-align: center; }
 
 .service-item-title { margin-bottom: 7px; }
@@ -554,6 +559,8 @@ main {
   font-weight: var(--fw-3);
   line-height: 1.6;
 }
+
+.service-item:hover .service-item-title { color: var(--orange-yellow-crayola); }
 
 
 /**
@@ -1034,6 +1041,8 @@ main {
   #BLOG
 \*-----------------------------------*/
 
+
+/*
 .blog-posts { margin-bottom: 10px; }
 
 .blog-posts-list {
@@ -1113,7 +1122,7 @@ main {
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
-
+*/
 
 
 
@@ -1122,6 +1131,7 @@ main {
   #CONTACT
 \*-----------------------------------*/
 
+/*
 .mapbox {
   position: relative;
   height: 250px;
@@ -1222,7 +1232,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
 
-
+*/
 
 
 /*-----------------------------------*\
