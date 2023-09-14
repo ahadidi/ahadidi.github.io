@@ -178,6 +178,11 @@ body { background: var(--smoky-black); }
   padding: 5px;
 }
 
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
 
 img {
   border-radius: 2%;
