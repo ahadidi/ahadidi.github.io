@@ -75,11 +75,12 @@
         <section class="about-text">
           <h3 class="h3 service-title">What?</h3>
           <p>
-          A quick personal project, I machined a <u><a style="display: inline; text-decoration: none; color: hsl(0, 0%, 12%);" href="https://en.wikipedia.org/wiki/Diabolical_cube" target="_blank">diabolical cube puzzle</a></u>  on the manual mill. Apart from being a fun desk toy, this puzzle was chosen because all 6 pieces are made up of a single layer of cubes. As I only had 1/2" thick stock, this allowed for a larger (and more satisfyingly hefty) final product. 
+            With benefits in tunability and the ability to change shift profiles on the fly, Baja SAE at UCLA is one of only a few teams in the U.S. that uses an electronically-controlled continuously variable transmission (ECVT). I was responsible for the design of a custom ball-screw linear actuator used to shift belt ratios in the 2020-2021 Baja vehicle. 
           </p>
 
           <p>
-          To gain experience with different materials, I machined pieces out of wood, aluminum, and steel. Special attention had to be paid to part tolerancing for a satisfying fit between the pieces. 
+            The initial iteration of UCLA's ECVT two years prior employed an off-the-shelf linear actuator, the Thomson Max Jac. However, the COTS actuator's insufficient shift-out speed led to frequent stalling. While the previous year's custom linear actuator had much-improved shift speed, it was plagued with reliability issues -- during testing, the ball screw was pulled out from the shaft coupler, damaging the actuator. 
+            As a result, I aimed to maintain sufficient shift speed while prioritizing robustness in my acutator design. 
           </p>
 
         </section>
@@ -89,7 +90,10 @@
         <section class="about-text">
           <h3 class="h3 service-title">How?</h3>
           <p>
-            The completed puzzle has a nice finish and feels great to play with (unfortunately it's still frustrating when you aren't able to find the solution). I gained a better feel for appropriate feeds and speeds for the different materials, and had a great time in the process. 
+            My revised actuator design included both a shaft collar and a flanged ball bearing sandwiched between 2 aluminum plates. These prevent the shaft coupler from seeing any tensile load (which had pulled the ball screw out from the coupler previously) or any compressive load (which could damage the electric actuator motor). 
+          </p>
+          <p>
+            Additionally, I eliminated the old actuator's 10-turn potentiometer used to find shift position in favor of a rotary encoder, increasing reliability and improving ease of integration with the ODrive motor controller. 
           </p>
           <div class="row">
             <div class="column">
@@ -110,7 +114,7 @@
         <section class="about-text">
           <h3 class="h3 service-title">Results</h3>
           <p>
-            The completed puzzle has a nice finish and feels great to play with (unfortunately it's still frustrating when you aren't able to find the solution). I gained a better feel for appropriate feeds and speeds for the different materials, and had a great time in the process. 
+            While not manufactured in 2021 due to COVID, the actuator was manufactured as designed and used in 2022 competition. A 2.8x increase in shift speed over the Max Jac prevented stalling, and the actuator experienced no mechanical failures. 
           </p>
           <div class="row">
             <div class="column2">

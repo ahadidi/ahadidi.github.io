@@ -86,44 +86,50 @@
         </section>
 
         
-        
         <section class="about-text">
           <h3 class="h3 service-title">How?</h3>
           <p>
-            The completed puzzle has a nice finish and feels great to play with (unfortunately it's still frustrating when you aren't able to find the solution). I gained a better feel for appropriate feeds and speeds for the different materials, and had a great time in the process. 
+            Following the circuit schematic outlined in this <u><a style="display: inline; text-decoration: none; color: hsl(0, 0%, 12%);" href="https://www.instructables.com/DIY-EEG-and-ECG-Circuit/" target="_blank">Instructables post</a></u>, I assembled the ECG circuit used for data collection. Two amplification circuits increase
+            the magnitude of the heart's electrical signal to a more easily-interpretable level, 60Hz notch filters attenuate noise from wall power (mains hum), and 
+            a 31Hz low pass filter removes high-frequecy noise above heartbeat frequency. 
+          </p>
+
+          <p>
+            We then used Python to measure the time between consecutive signal peaks, giving us a means of calculating heartrate. Measuring heartrate vs. time
+            for different relaxation techniques allowed us to find which interventions were most effective in lowering an elevated heartrate. 
           </p>
           <div class="row">
             <div class="column">
               <img src=".\assets\images\LabeledECGCircuit.png" alt="Aluminum" style="width:100%;">
-              <div class = "caption"> One of the 13 solutions </div>
+              <div class = "caption">ECG circuit schematic</div>
             </div>
             <div class="column">
               <img src=".\assets\images\AssembledECGCircuit.jpg" alt="Steel" style="width:100%">
-              <div class = "caption"> 6 machined pieces </div>
+              <div class = "caption">Assembled ECG circuit</div>
             </div>
             <div class="column">
               <img src=".\assets\images\LabeledPeaks.png" alt="Wood" style="width:100%">
-              <div class = "caption"> Another solution </div>
+              <div class = "caption">ECG output with peaks labeled</div>
             </div>
         </section>
 
         <section class="about-text">
           <h3 class="h3 service-title">Results</h3>
           <p>
-            The completed puzzle has a nice finish and feels great to play with (unfortunately it's still frustrating when you aren't able to find the solution). I gained a better feel for appropriate feeds and speeds for the different materials, and had a great time in the process. 
-          </p>
+            Our homemade ECG circuit allowed all phases of the cardiac cycle to be seen. While we didn't run the most rigorous scientific experiment given the scope of the class, we found that interventions where the participant sat down 
+            after strenuous activity proved more effective in reducing heartrate than when the participant remained standing. 
           <div class="row">
             <div class="column">
               <img src=".\assets\images\SingleBeat.png" alt="Aluminum" style="width:100%;">
-              <div class = "caption"> One of the 13 solutions </div>
+              <div class = "caption">ECG signal from single heartbeat</div>
             </div>
             <div class="column">
               <img src=".\assets\images\HeartRatevsTime_Full.png" alt="Steel" style="width:100%">
-              <div class = "caption"> 6 machined pieces </div>
+              <div class = "caption">Heartrate vs. time for single intervention</div>
             </div>
             <div class="column">
               <img src=".\assets\images\HeartRatevsTime_AllResults.png" alt="Wood" style="width:100%">
-              <div class = "caption"> Another solution </div>
+              <div class = "caption">Heartrate vs. time for all interventions</div>
             </div>
         </section>
 
