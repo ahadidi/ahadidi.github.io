@@ -76,13 +76,18 @@
         <section class="about-text">
           <h3 class="h3 service-title">What?</h3>
           <p>
-          A quick personal project, I machined a <u><a style="display: inline; text-decoration: none; color: hsl(0, 0%, 12%);" href="https://en.wikipedia.org/wiki/Diabolical_cube" target="_blank">diabolical cube puzzle</a></u>  on the manual mill. Apart from being a fun desk toy, this puzzle was chosen because all 6 pieces are made up of a single layer of cubes. As I only had 1/2" thick stock, this allowed for a larger (and more satisfyingly hefty) final product. 
+            UCLA Baja's 2022 vehicle ran a continuously variable transmission (CVT), where power is transferred from a set of drive sheaves to a set of driven sheaves via a belt. Keeping the transmission cool is critical for a number of reasons -- first, a dissimilar-material press fit, where 
+            an aluminum driven sheave is press-fit onto a steel shaft, had to be kept below ~250F to prevent failure. And from the materials side of things, 6061 aluminum's tensile strength degrades above ~100C, and belt heat damage occurs above ~230F. As a result, a worst-case target temperature of 200F was identified. 
           </p>
+
+          <div style="width: 30%; margin:auto;">
+            <img src=".\assets\images\ECVT Assembly.png" style="border-radius: 10px; object-fit: cover; width: 100%; max-height: 50%;">
+            <div class = "caption">CVT Assembly CAD</div>
+          </div>
 
           <p>
-          To gain experience with different materials, I machined pieces out of wood, aluminum, and steel. Special attention had to be paid to part tolerancing for a satisfying fit between the pieces. 
+            Given a recent rules change that prevented firewall cutouts and air intakes that extended past the car's roll hoop, we chose active cooling as a means of keeping transmission temperatures under control. I worked with one other engineer to design, simulate, and manufacture this new system. 
           </p>
-
         </section>
 
         
@@ -90,29 +95,40 @@
         <section class="about-text">
           <h3 class="h3 service-title">How?</h3>
           <p>
-            The completed puzzle has a nice finish and feels great to play with (unfortunately it's still frustrating when you aren't able to find the solution). I gained a better feel for appropriate feeds and speeds for the different materials, and had a great time in the process. 
+            Assuming all drivetrain inefficiency went to heat generation, SolidWorks Flow Simulation was used to model airflow within the transmission cover and transmission temperature trends. Given the transmission's unknown resistance to flow, 
+            pump best practices dictate prioritizing pressure buildup over outright air flowrate. As a result, a centrifugal blower design (which is good at both generating pressure and moving air) was selected. 
           </p>
+
+          <p>
+            SolidWorks and its Flow Simulation tool were used to design and optimize the volute blower casing and impeller, and prototype fit-check parts were FDM 3D printed out of PLA. Finalized parts were SLS 3D printed out of nylon given the material's 
+            low brittleness, high glass transistion temperature, and good surface finish. 
+          </p>
+
+
           <div class="row">
-            <div class="column">
-              <img src=".\assets\images\BlowerCAD.jpg" alt="Wood" style="width:100%">
-              <div class = "caption">Blower assembly CAD</div>
-            </div>
-            <div class="column">
-              <img src=".\assets\images\LabeledBlower.png" alt="Aluminum" style="width:100%;">
-              <div class = "caption">Labeled exploded view</div>
-            </div>
             <div class="column">
               <img src=".\assets\images\CoolingCFD.png" alt="Steel" style="width:100%">
               <div class = "caption">Transmission cover CFD</div>
             </div>
+            <div class="column">
+              <img src=".\assets\images\LabeledBlower.png" alt="Aluminum" style="width:100%;">
+              <div class = "caption">Blower exploded view</div>
+            </div>
+            <div class="column">
+              <img src=".\assets\images\BlowerCAD.jpg" alt="Wood" style="width:100%">
+              <div class = "caption">Blower assembly</div>
+            </div>
+
 
         </section>
 
         <section class="about-text">
           <h3 class="h3 service-title">Results</h3>
           <p>
-            The completed puzzle has a nice finish and feels great to play with (unfortunately it's still frustrating when you aren't able to find the solution). I gained a better feel for appropriate feeds and speeds for the different materials, and had a great time in the process. 
+            When tested on a stationary car, the blower was able to build enough pressure to push air through the transmission cover at the flowrate required for cooling as determined through simulation. Unfortunately, last-minute motor controller issues prevented the cooling system 
+            from being run at competition -- an important lesson in leaving more than enough time to test in real-world conditions. On the upside, the system was very well received by competition design judges. 
           </p>
+
           <div class="row">
             <div class="column2">
               <img src=".\assets\images\BlowerAssemb.jpg" alt="Aluminum" style="width:100%">
@@ -126,6 +142,9 @@
 
 
           <h3 class="h3 service-title">SolidWorks CFD Walkthrough</h3>
+          <p>
+           For future student engineers to build off of our work, my teammate and I put together a tech talk on using SolidWorks Flow Simulation to analyze rotating components. Feel free to look through our slides below! 
+          </p>
           <div style="width:65%; margin:auto">
             <div style="position: relative; padding-bottom: 56.25%;">
               <iframe 
