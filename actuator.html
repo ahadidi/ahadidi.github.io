@@ -75,11 +75,17 @@
         <section class="about-text">
           <h3 class="h3 service-title">What?</h3>
           <p>
-            With benefits in tunability and the ability to change shift profiles on the fly, Baja SAE at UCLA is one of only a few teams in the U.S. that uses an electronically-controlled continuously variable transmission (ECVT). I was responsible for the design of a custom ball-screw linear actuator used to shift belt ratios in the 2020-2021 Baja vehicle. 
+            With benefits in tunability and the ability to change shift profiles on the fly, Baja SAE at UCLA is one of the only teams in the U.S. that uses an electronically-controlled continuously variable transmission (ECVT). I was responsible for the design of a custom ball-screw linear actuator used to shift belt ratios in the 2020-2021 Baja vehicle. 
           </p>
 
+          <div style="width: 30%; margin:auto;">
+            <img src=".\assets\images\ECVT Assembly.png" style="border-radius: 10px; object-fit: cover; width: 100%; max-height: 50%;">
+            <div class = "caption">Full ECVT Assembly</div>
+          </div>
+          
+
           <p>
-            The initial iteration of UCLA's ECVT two years prior employed an off-the-shelf linear actuator, the Thomson Max Jac. However, the COTS actuator's insufficient shift-out speed led to frequent stalling. While the previous year's custom linear actuator had much-improved shift speed, it was plagued with reliability issues -- during testing, the ball screw was pulled out from the shaft coupler, damaging the actuator. 
+            The initial version of UCLA's ECVT two years prior used the Thomson MaxJac, an off-the-shelf linear actuator. However, the COTS actuator's insufficient shift-out speed led to frequent stalling. While the previous year's custom linear actuator had much-improved shift speed, the coupling between the motor shaft and ball screw failed. 
             As a result, I aimed to maintain sufficient shift speed while prioritizing robustness in my acutator design. 
           </p>
 
@@ -90,10 +96,10 @@
         <section class="about-text">
           <h3 class="h3 service-title">How?</h3>
           <p>
-            My revised actuator design included both a shaft collar and a flanged ball bearing sandwiched between 2 aluminum plates. These prevent the shaft coupler from seeing any tensile load (which had pulled the ball screw out from the coupler previously) or any compressive load (which could damage the electric actuator motor). 
+            My revised actuator design prevented the shaft coupler from seeing any tensile load (which had pulled the ball screw out from the coupler previously) or any compressive load (which could damage the electric actuator motor).
           </p>
           <p>
-            Additionally, I eliminated the old actuator's 10-turn potentiometer used to find shift position in favor of a rotary encoder, increasing reliability and improving ease of integration with the ODrive motor controller. 
+            Additionally, I eliminated the old actuator's potentiometer used to measure shift position in favor of a rotary encoder, increasing reliability and improving ease of integration with the ODrive motor controller. 
           </p>
           <div class="row">
             <div class="column">
@@ -106,10 +112,12 @@
               <div class = "caption">Labeled actuator</div>
             </div>
             <div class="column">
-              <img src=".\assets\images\ECVT Assembly.png" alt="Wood" style="width:100%">
-              <div class = "caption">Full ECVT assembly CAD</div>
+              <img src=".\assets\images\CouplerSolution.png" alt="Wood" style="width:100%">
+              <div class = "caption">Section view of shaft coupling</div>
             </div>
         </section>
+
+  
 
         <section class="about-text">
           <h3 class="h3 service-title">Results</h3>
